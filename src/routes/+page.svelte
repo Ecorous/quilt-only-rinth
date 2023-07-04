@@ -41,6 +41,8 @@
 	<title>Quilt-only mods (on modrinth)</title>
 </svelte:head>
 <h1>Quilt-only mods from Modrinth</h1>
+<h2>Shows mods which are Quilt-only on Modrinth.</h2>
+<h3>This project is not affiliated with, nor endorsed by, <i><b>Rinth, Inc.</b></i></h3>
 <div bind:this={x}>
 	{#if visible}
 		{#each projects as project}
