@@ -75,9 +75,14 @@
 </div>
 
 <style>
+    @import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+    :root {
+        background-color: var(--ctp-mocha-base);
+        color: var(--ctp-mocha-text);
+    }
 	div.project {
 		border-radius: 15px;
-		background-color: grey;
+		background-color: var(--ctp-mocha-crust);
 		width: max-content;
 		padding: 5px;
 		margin-bottom: 10px;
