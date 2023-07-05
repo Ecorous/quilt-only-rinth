@@ -46,7 +46,11 @@
 <div bind:this={x}>
 	{#if visible}
 		{#each projects as project}
-			<div
+			<div role="link" on:keypress={(x) => {
+                if (x.key == "Enter" || x.key == " ") {
+                    window.open('https://modrinth.com/project/' + project.project_id, '_blank');
+                } 
+            }} tabindex="0"
 				on:click={() => {
 					window.open('https://modrinth.com/project/' + project.project_id, '_blank');
 				}}
